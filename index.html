@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+    <head>
+		<title>4Chicks</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="description" content="4Chicks">
+		<meta name="keywords" content="Shawarma"/>
+		<meta name="author" content="Brund.Run">
+		<meta name="robots" content="index,follow">
+        <link rel="shortcut icon" type="image/jpg" href="./images/chicken-image.jpg"/>
+	   
+	 	<!-- ======== Google Fonts ======== -->
+	 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,300i,400,400i,500,500i,700,700i,800,800i,900,900i%7CPT+Sans:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;900&display=swap" rel="stylesheet"> 
+		<!-- ======== Stylesheets ======== -->
+		<!-- Player -->
+		<link rel="stylesheet" href="js/audio-player/css/scamp.player.css" media="screen" />
+		<link rel="stylesheet" href="js/audio-player/css/scamp.player.light.css" media="screen" />
+		<!-- icons -->
+		<link rel="stylesheet" href="ico/icomoon.css" media="screen" />
+		<link rel="stylesheet" href="ico/Pe-icon-7-stroke.css" media="screen" />
+		<!-- Lightbox -->
+		<link rel="stylesheet" href="css/magnific-popup.css" media="screen" />
+		<!-- Main stylesheets -->
+        <link rel="stylesheet" href="css/style.css" media="screen" />
+
+		<!-- ======== Javascripts ======== -->
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body class="home">
+	
+		<!-- ======== Loader ======== -->
+		<div id="loading-layer" class="loading-layer show-layer">
+			<div class="ajax-loader">
+				<div class="show-fx trans-10 delay-02">
+					<div class="loader-img skew-fx-loop"><img src="images/reload.png" alt="Logo"></div>
+				</div>
+				<div class="show-fx trans-10 delay-03">
+					<div class="loader-bar">
+						<span class="progress-bar"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ======== Resopnsive Navigation ======== -->
+        <div class="responsive-block">
+            <div class="responsive-block-content">
+                <a href="#" class="responsive-block-close"></a>
+                <nav id="responsive-nav"> <!-- Responsive nav here --> </nav>
+                <div id="responsive-social"> <!-- Responsive Social Icons from header -->  </div>
+            </div>
+        </div>  
+        <div class="responsive-block-layer"></div>
+
+		<!-- ======== Header ======== -->
+		<div id="header" class="hide-navigation">
+			
+			<!-- ======== Search ========  
+			<div id="search-block">
+				<input type="text" placeholder="Search and hit enter..." name="s" id="search" />
+			</div>
+			/search -->
+
+			<!-- ======== Social ======== --> 
+			<div id="social-block">
+				<h6 class="social-title trans-10 show-fx">SOCIAL LINKS</h6>
+
+				<div class="social-icons trans-10 show-fx delay-01">
+
+				
+
+					<!-- Twitter -->
+					<a href="#" class="circle-btn">
+						<svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
+							<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+						</svg>
+						<span class="icon icon-twitter"></span>
+					</a>
+
+					<!-- Beatport -->
+					<a href="#" class="circle-btn">
+						<svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
+							<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+						</svg>
+						<span class="icon icon-instagram"></span>
+					</a>
+
+					<!-- Bandcamp -->
+					<a href="#" class="circle-btn">
+						<svg class="circle-svg" width="50" height="50" viewBox="0 0 50 50">
+							<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+						</svg>
+						<span class="icon icon-whatsapp"></span>
+					</a>
+
+				</div>
+				
+			</div>
+			<!-- /share icons -->
+
+			 <!-- ======== Main Navigation ======== --> 
+			<div id="main-nav">
+
+				<!-- Navigation container -->
+			   	<div class="nav-container">
+
+				   	<!-- ======== Logo ======== --> 
+				   	<a href="#intro" id="logo" class="smooth-scroll skew-fx">
+				   		<img src="images/reload.png" alt="Logo" class="logo-light" width="50">
+				   		<img src="images/reload.png" alt="Logo" class="logo-dark" width="50">
+				   	</a>
+				   	<!-- /logo -->
+
+				   	 <!-- ======== Icon navigation ======== --> 
+					<nav id="icon-nav">
+						<ul>
+							<li class="responsive-trigger-wrap"><a href="#" class="circle-btn responsive-trigger">
+                                <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
+                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                </svg>
+                                <span class="icon"></span>
+                                </a>
+                            </li>
+                            <li class="player-trigger-wrap"><a href="#show-player" class="nav-player-btn circle-btn">
+                                <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
+                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                    <circle class="circle-bg" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                </svg>
+                                <span class="pe-7s-musiclist"></span>
+                                </a>
+                            </li>
+                            <!-- <li class="search-trigger-wrap"><a href="#" id="nav-search" class="circle-btn">
+                                <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
+                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                </svg>
+                                <span class="pe-7s-search"></span>
+                                </a>
+                            </li> -->
+                            <li class="social-trigger-wrap"><a href="#" id="nav-social" class="circle-btn">
+                                <svg class="circle-svg" width="40" height="40" viewBox="0 0 50 50">
+                                    <circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+                                </svg>
+                                <span class="pe-7s-share"></span>
+                                </a>
+                            </li>
+                        </ul>
+					</nav>
+					<!-- /icon navigation -->
+			
+					 <!-- ======== Navigation ======== --> 
+					<nav id="nav">
+						<ul>
+							<li class="text-fx-btn rotate-x-360">
+								<a href="./" class="trans-10 text-fx-btn-x">Home</a>
+							</li>
+							<li class="text-fx-btn rotate-x-360">
+								<a href="#menu" class="trans-10 text-fx-btn-x">Menu</a>
+							</li>
+							<li class="text-fx-btn rotate-x-360">
+								<a href="./about.html" class="trans-10 text-fx-btn-x">About</a>
+							</li>
+							<!-- <li class="text-fx-btn rotate-x-360">
+								<a href="#" class="trans-10 text-fx-btn-x">Lifestyle</a>
+							</li> -->
+							<li class="text-fx-btn rotate-x-360">
+								<a href="./locations.html" class="trans-10 text-fx-btn-x">Location</a>
+							</li>
+							<li class="text-fx-btn rotate-x-360">
+								<a href="./contact.html" class="trans-10 text-fx-btn-x ajax-link">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- /navigation -->
+
+			   	</div>
+			   	<!-- /navigation container -->
+			</div>
+			<!-- /main navigation -->
+		</div>
+		<!-- /header -->
+	
+		<!-- ======== Site ======== -->
+		<div class="site">
+			
+			<!-- ======== intro ======== -->
+			<div id="intro" class="intro intro-01 intro-fullscreen clearfix" >
+				
+				<!-- Image -->
+				<div class="intro-image parallax trans-20"><img class="hidden" src="images/hero-image.jpg" alt="Intro-image"></div>
+
+				<!-- Text slider -->
+				<div class="text-slider" data-delay="5">
+					<div class="text-slide visible">
+						<h2 class="text-fx">4Chicks!</h2>
+						<h6 class="text-fx-word">SHAWARMA SHAWARMA! OHHH SHAWARMA!</h6>
+					</div>
+					<div class="text-slide">
+						<h2 class="text-fx">4Chicks</h2>
+						<h6 class="text-fx-word">SHAWARMA SHAWARMA! OHHH SHAWARMA!</h6>
+					</div>
+				</div>
+				<!-- /text slider -->
+				<span class="scroll-discover"><span class="icon icon-line-arrow-left"></span> Scroll to discover</span>
+			</div>
+			<!-- /intro -->
+
+			<!-- ======== Menu ======== -->
+			<div id="menu" class="section">
+
+				<div class="container music-header section-content full-width">
+					<!-- == content header == -->
+					<header class="content-header">
+						<h2 class="content-title" style="line-height: 3.5rem;">CHOOSE YOUR<br> FAVORITES</h2>
+						<!-- <span class="back-layer barlow" data-parallax='{"y": 20}'>Releases</span> -->
+					</header>
+
+				</div>
+
+				<!-- == music filter == -->
+				<div id="music-main-filter" class="filter">
+					<ul class="filter-list item-filter active-filter clearfix">
+						<li><a data-categories="*" class="reveal-fx-static"><img src="./images/reload.png" width="50"></a></li>
+						<li><a data-categories="Shawarma" class="reveal-fx-static"><img src="https://www.find-salt.com/assets/img/menu1.png" width="50" style="filter: invert(1);"></a></li>
+						<li><a data-categories="Fries" class="reveal-fx-static"><img src="https://www.find-salt.com/assets/img/menu2.png" width="50" style="filter: invert(1);"></a></li>
+						<li><a data-categories="Beverages" class="reveal-fx-static"><img src="https://www.find-salt.com/assets/img/menu3.png" width="50" style="filter: invert(1);"></a></li>
+						<li><a data-categories="Desserts" class="reveal-fx-static"><img src="https://www.find-salt.com/assets/img/menu4.png" width="50" style="filter: invert(1);"></a></li>
+					</ul>
+				</div>
+				<!-- /music filter -->
+
+				<!-- == music grid == -->
+				<div id="music-items" class="full-width items clearfix">
+					<!-- item -->
+					<div class="item" data-categories="new Shawarma">
+						<a href="project01.html" class="thumb project-thumb thumb-fade ajax-link" data-nav-container="#music-items">
+							<!-- Image -->
+							<img src="images/product1.jpg" alt="Release image" >
+							<!-- Badge -->
+							<span class="badge new">NEW</span>
+							<!-- Title -->
+							<div class="desc-layer">
+								<h2 class="text-fx-word">OHH! Shawarma</h2>
+								<h3 class="text-fx-word">Shawarma</h3>
+							</div>
+							<!-- Icon -->
+							<span class="thumb-icon trans-40">
+								<svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+									<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+									</svg>
+									<span class="pe-7s-expand1"></span>
+							</span>
+						</a>
+						
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="item" data-categories="new Shawarma">
+						<a href="project01.html" class="thumb project-thumb thumb-fade ajax-link" data-nav-container="#music-items">
+							<!-- Image -->
+							<img src="images/product2.jpg" alt="Release image" >
+							<!-- Badge -->
+							<span class="badge new">NEW</span>
+							<!-- Title -->
+							<div class="desc-layer">
+								<h2 class="text-fx-word">OHH! Shawarma</h2>
+								<h3 class="text-fx-word">Shawarma</h3>
+							</div>
+							<!-- Icon -->
+							<span class="thumb-icon trans-40">
+								<svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+									<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+									</svg>
+									<span class="pe-7s-expand1"></span>
+							</span>
+						</a>
+						
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="item" data-categories="new Fries">
+						<a href="project01.html" class="thumb project-thumb thumb-fade ajax-link" data-nav-container="#music-items">
+							<!-- Image -->
+							<img src="images/product3.jpg" alt="Release image" >
+							<!-- Badge -->
+							<span class="badge new">NEW</span>
+							<!-- Title -->
+							<div class="desc-layer">
+								<h2 class="text-fx-word">OHH! Shawarma</h2>
+								<h3 class="text-fx-word">Shawarma</h3>
+							</div>
+							<!-- Icon -->
+							<span class="thumb-icon trans-40">
+								<svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+									<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+									</svg>
+									<span class="pe-7s-expand1"></span>
+							</span>
+						</a>
+						
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="item" data-categories="new Fries">
+						<a href="project01.html" class="thumb project-thumb thumb-fade ajax-link" data-nav-container="#music-items">
+							<!-- Image -->
+							<img src="https://www.lemonblossoms.com/wp-content/uploads/2018/07/Chicken-Shawarma-Recipe-S5.jpg" alt="Release image" >
+							<!-- Badge -->
+							<span class="badge new">NEW</span>
+							<!-- Title -->
+							<div class="desc-layer">
+								<h2 class="text-fx-word">OHH! Shawarma</h2>
+								<h3 class="text-fx-word">Shawarma</h3>
+							</div>
+							<!-- Icon -->
+							<span class="thumb-icon trans-40">
+								<svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+									<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+									</svg>
+									<span class="pe-7s-expand1"></span>
+							</span>
+						</a>
+						
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="item" data-categories="new Beverages">
+						<a href="project01.html" class="thumb project-thumb thumb-fade ajax-link" data-nav-container="#music-items">
+							<!-- Image -->
+							<img src="https://www.lemonblossoms.com/wp-content/uploads/2018/07/Chicken-Shawarma-Recipe-S5.jpg" alt="Release image" >
+							<!-- Badge -->
+							<span class="badge new">NEW</span>
+							<!-- Title -->
+							<div class="desc-layer">
+								<h2 class="text-fx-word">OHH! Shawarma</h2>
+								<h3 class="text-fx-word">Shawarma</h3>
+							</div>
+							<!-- Icon -->
+							<span class="thumb-icon trans-40">
+								<svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+									<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+									</svg>
+									<span class="pe-7s-expand1"></span>
+							</span>
+						</a>
+						
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="item" data-categories="new Shawarma">
+						<a href="project01.html" class="thumb project-thumb thumb-fade ajax-link" data-nav-container="#music-items">
+							<!-- Image -->
+							<img src="images/product1.jpg" alt="Release image" >
+							<!-- Badge -->
+							<span class="badge new">NEW</span>
+							<!-- Title -->
+							<div class="desc-layer">
+								<h2 class="text-fx-word">OHH! Shawarma</h2>
+								<h3 class="text-fx-word">Shawarma</h3>
+							</div>
+							<!-- Icon -->
+							<span class="thumb-icon trans-40">
+								<svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+									<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+									</svg>
+									<span class="pe-7s-expand1"></span>
+							</span>
+						</a>
+						
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="item" data-categories="new Shawarma">
+						<a href="project02.html" class="thumb project-thumb thumb-fade ajax-link" data-nav-container="#music-items">
+							<!-- Image -->
+							<img src="images/product2.jpg" alt="Release image" >
+							<!-- Badge -->
+							<span class="badge new">NEW</span>
+							<!-- Title -->
+							<div class="desc-layer">
+								<h2 class="text-fx-word">OHH! Shawarma</h2>
+								<h3 class="text-fx-word">Shawarma</h3>
+							</div>
+							<!-- Icon -->
+							<span class="thumb-icon trans-40">
+								<svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+									<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+									</svg>
+									<span class="pe-7s-expand1"></span>
+							</span>
+						</a>
+						
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="item" data-categories="new Beverages">
+						<a href="project01.html" class="thumb project-thumb thumb-fade ajax-link" data-nav-container="#music-items">
+							<!-- Image -->
+							<img src="images/product3.jpg" alt="Release image" >
+							<!-- Badge -->
+							<span class="badge new">NEW</span>
+							<!-- Title -->
+							<div class="desc-layer">
+								<h2 class="text-fx-word">OHH! Shawarma</h2>
+								<h3 class="text-fx-word">Shawarma</h3>
+							</div>
+							<!-- Icon -->
+							<span class="thumb-icon trans-40">
+								<svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+									<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+									</svg>
+									<span class="pe-7s-expand1"></span>
+							</span>
+						</a>
+						
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="item" data-categories="new Desserts">
+						<a href="project01.html" class="thumb project-thumb thumb-fade ajax-link" data-nav-container="#music-items">
+							<!-- Image -->
+							<img src="https://www.lemonblossoms.com/wp-content/uploads/2018/07/Chicken-Shawarma-Recipe-S5.jpg" alt="Release image" >
+							<!-- Badge -->
+							<span class="badge new">NEW</span>
+							<!-- Title -->
+							<div class="desc-layer">
+								<h2 class="text-fx-word">OHH! Shawarma</h2>
+								<h3 class="text-fx-word">Shawarma</h3>
+							</div>
+							<!-- Icon -->
+							<span class="thumb-icon trans-40">
+								<svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+									<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+									</svg>
+									<span class="pe-7s-expand1"></span>
+							</span>
+						</a>
+						
+					</div>
+					<!-- /item -->
+					<!-- item -->
+					<div class="item" data-categories="new Desserts">
+						<a href="project01.html" class="thumb project-thumb thumb-fade ajax-link" data-nav-container="#music-items">
+							<!-- Image -->
+							<img src="https://www.lemonblossoms.com/wp-content/uploads/2018/07/Chicken-Shawarma-Recipe-S5.jpg" alt="Release image" >
+							<!-- Badge -->
+							<span class="badge new">NEW</span>
+							<!-- Title -->
+							<div class="desc-layer">
+								<h2 class="text-fx-word">OHH! Shawarma</h2>
+								<h3 class="text-fx-word">Shawarma</h3>
+							</div>
+							<!-- Icon -->
+							<span class="thumb-icon trans-40">
+								<svg class="circle-svg" width="80" height="80" viewBox="0 0 50 50">
+									<circle class="circle" cx="25" cy="25" r="23" stroke="#fff" stroke-width="1" fill="none"></circle>
+									</svg>
+									<span class="pe-7s-expand1"></span>
+							</span>
+						</a>
+						
+					</div>
+					<!-- /item -->
+
+					
+				</div>
+				<!-- /menu grid -->
+
+			</div>
+			<!-- /menu -->
+
+			<div id="bio" class="section" > 
+
+				<!-- container -->
+				<div class="container small section-content bio-text-block">
+					<!-- == content header == -->
+					<header class="content-header">
+						<h2 class="content-title">SHAWARMA HABIBI!</h2>
+						<!-- <span class="back-layer barlow" data-parallax='{"y": -40}'>Biography</span> -->
+					</header>
+					
+					<p>100% halal certified wagyu beef.<br>
+						Free range, grass-fed, hormone-free.</p>
+
+					
+				</div>
+				<!-- /container -->
+
+				
+
+			</div>
+			<!-- /bio -->
+
+			<div id="bio" class="section" style="background: url('https://nutriasia.com/wp-content/uploads/2019/12/NutriAsia-recipe-shawarma-1200x675.jpg'); background-size: cover; height: 100vh"> 
+
+				<!-- container -->
+				<div class="container small section-content bio-text-block">
+					<!-- == content header == -->
+					<header class="content-header">
+						<h2 class="content-title">SHAWARMA HABIBI!</h2>
+						<!-- <span class="back-layer barlow" data-parallax='{"y": -40}'>Biography</span> -->
+					</header>
+					
+					<p>100% halal certified wagyu beef.<br>
+						Free range, grass-fed, hormone-free.</p>
+
+					
+				</div>
+				<!-- /container -->
+
+				
+
+			</div>
+			<!-- /bio -->
+
+
+			
+
+			
+
+
+			<!-- ======== Newsletter ======== -->
+			<div id="newsletter">
+				<div class="overlay dots"></div> <!-- overlay layer -->
+				<!-- == section container == -->
+				<div class="container section-content dark-bg clearfix">
+
+					<!-- == content header == -->
+					<header class="content-header">
+						<h1 class="content-title">Newsletter</h1>
+						<span class="back-layer barlow" data-parallax='{"y": -40}'>Subscribe</span>
+					</header>
+					<!-- /content header -->
+					<!-- subscribe form -->
+					<form action="#post" method="post" id="subscribe-form">
+						<input type="email" name="subscribe_email" value="" id="subscribe-email" placeholder="Enter your email..." required>
+						<input type="submit" value="+" class="large" id="subscribe-submit">
+					</form>
+					<!-- /subscribe form -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /newsletter -->
+
+			<!-- ======== Instagram feed ======== 
+			<div id="instagram" class="instagram" >
+				<div class="instagram-feed">
+				</div>
+				<div class="follow-overlay"><a class="barlow" href="#">@shawarma4chicks</a></div>
+			</div>
+			-->
+
+			<!-- ======== footer ======== -->
+			<footer id="footer">
+				<!-- container -->
+				<div class="container">
+					<div id="copyrights">
+						4Chicks Copyright &copy; 2021. All Rights Reserved.
+					</div>
+				</div>
+				<!-- /container -->
+			</footer>
+			<!-- /footer -->
+		</div>
+		<!-- /site -->
+
+		<!-- ======== Audio Player ======== -->
+		<div id="scamp_player" class=" sp-anim">
+			<!-- Player Autostart Track -->
+            <a href="./mp3/Billie.mp3" 
+	            data-cover="images/reload.png"
+	            data-artist="Billie eilish" 
+	            data-artist_url="#" 
+	            data-artist_target="_blank" 
+	            data-release_url="" 
+	            data-release_target="_self" 
+	            data-shop_url="" 
+	            data-shop_target="_self" 
+	            data-free_download="yes">
+            	Bad Guy
+        	</a>
+		</div>
+		<!-- /Audio Player -->
+
+
+		<!-- ======== Javascripts ======== -->
+		<script src="js/jquery.easing-1.3.min.js"></script>
+		<script src="js/jquery.isotope.min.js"></script>
+		<script src="js/imagesloaded.min.js"></script>
+		<script src="js/jquery.bxslider.js"></script>
+		<script src="js/nprogress.js"></script>
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/smooth-scrollbar.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+
+		<!-- audio player -->
+		<script src="js/audio-player/js/sdk.js"></script>
+		<script src="js/audio-player/js/jquery.shoutcast.min.js"></script>
+		<script src="js/audio-player/js/soundmanager2-nodebug-jsmin.js"></script>
+		<script src="js/audio-player/jquery.scamp.player.min.js"></script>
+		<!-- /audio player -->
+
+		<!-- google scripts -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALbWA4xez3CztK8Q-fZkvxAie-rpMm3jY;async=2&#038;ver=1.0.0"></script>
+		<script src="js/jquery.gmap.min.js"></script>
+
+		<!-- custom scripts -->
+		<script src="js/scripts.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>
