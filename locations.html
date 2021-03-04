@@ -27,10 +27,18 @@
 		<link rel="stylesheet" href="css/magnific-popup.css" media="screen" />
 		<!-- Main stylesheets -->
         <link rel="stylesheet" href="css/style.css" media="screen" />
-
+		<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+		crossorigin=""/>
 		<!-- ======== Javascripts ======== -->
 		<!-- jQuery -->
 		<script src="js/jquery.min.js"></script>
+		<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+		 <!-- Make sure you put this AFTER Leaflet's CSS -->
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
 	</head>
 	<body class="home">
 	
@@ -215,21 +223,24 @@
                 <div class="container">
                     <div class="grid-row grid-row-pad-large"> 
                         <div class="grid-12 grid-tablet-12 grid-mobile-12" style="padding: 35px;"> 
-                            <img src="https://alfa-logistics-family.com/wp-content/uploads/2019/12/Riyadh-Saudi-Arabia-scaled.jpg" alt="about us graphis 2" />     
+                            <div id="jedMap"><div id="mapid"></div></div>   
+							<div id="ruhMap" class="hidden_"><img src="./images/coming-soon.jpg" alt=""></div>
+							<div id="jorMap" class="hidden_"><img src="./images/coming-soon-2.jpg" alt=""></div>
                         </div>
                         <hr class="divider">
                     </div>
 
                     <div class="grid-row grid-row-pad-large"  style="display: flex; justify-content: center; align-items: center;"> 
-                        <div class="grid-6 grid-tablet-12 grid-mobile-12"> 
+                        <div class="grid-4 grid-tablet-12 grid-mobile-12"> 
                     
-                            <a href="#"><p class="location_btn">RIYADH</p></a>
-                            <a href="#"><p class="location_btn">RIYADH</p></a>
+                            <a href="#" id="jed" onclick="jedClick()"><p class="location_btn show_">JEDDAH</p></a>
                         </div>
-                        <div class="grid-6 grid-tablet-12 grid-mobile-12"> 
+                        <div class="grid-4 grid-tablet-12 grid-mobile-12"> 
                     
-                            <a href="#"><p class="location_btn">RIYADH</p></a>
-                            <a href="#"><p class="location_btn">RIYADH</p></a>
+                            <a href="#" id="ruh" onclick="ruhClick()"><p class="location_btn">RIYADH</p></a>
+                        </div>
+                        <div class="grid-4 grid-tablet-12 grid-mobile-12"> 
+                            <a href="#" id="jor" onclick="jorClick()"><p class="location_btn">JORDAN</p></a>
                         </div>
                     </div>
                 </div>
@@ -237,14 +248,90 @@
 			<!-- /About -->
                 
 
-            <!-- ==== GALLERY SECTION ====-->
-            <div class="container">
+            <!-- ==== JED INFO ====-->
+            <div class="container" id="jedInfo">
+                <div class="grid-row grid-row-pad-large"> 
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12">
+                        <h3>LOCATION</h3>
+                    </div>
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12">
+                        <h3>JEDDAH</h3>
+                        <p>Umm Al Muminin Safiyah 3402 Al Naseem Dist 5792, Jeddah 23234</p>
+                    </div>
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12">
+                        <h3>HOURS</h3>
+                        <p>Coming Soon</p>
+						<h3 style="margin-top: 25px;">CONTACT</h3>
+                        <p>+966533350083</p>
+                    </div>
+                </div>
+                <div class="grid-row grid-row-pad-large"> 
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12"> 
+                        <img src="./images/product1.jpg" alt="about us graphis 2" />
+                    </div>
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12"> 
+                        <img src="./images/product2.jpg" alt="about us graphis 2" />
+                    </div>
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12"> 
+                        <img src="./images/product3.jpg" alt="about us graphis 2" />
+                    </div>
+                </div>
+                <div class="grid-row grid-row-pad-large" > 
+                    <div class="grid-6 grid-tablet-12 grid-mobile-12"> 
+                        <img src="https://www.find-salt.com/assets/img/location2-4.jpg" alt="about us graphis 2" />
+                    </div>
+                    <div class="grid-6 grid-tablet-12 grid-mobile-12"> 
+                        <img src="https://www.find-salt.com/assets/img/location1-2.jpg" alt="about us graphis 2" />
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+
+			 <!-- ==== RUH INFO ====-->
+			 <div class="container hidden_" id="ruhInfo">
                 <div class="grid-row grid-row-pad-large"> 
                     <div class="grid-4 grid-tablet-12 grid-mobile-12">
                         <h3>LOCATION</h3>
                     </div>
                     <div class="grid-4 grid-tablet-12 grid-mobile-12">
                         <h3>RIYADH</h3>
+                        <p>mamaiya shawarma oh yeah blah blah blah,Riyadh</p>
+                    </div>
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12">
+                        <h3>HOURS</h3>
+                        <p>12:00 pm - 11:00 pm</p>
+                    </div>
+                </div>
+                <div class="grid-row grid-row-pad-large"> 
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12"> 
+                        <img src="./images/product1.jpg" alt="about us graphis 2" />
+                    </div>
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12"> 
+                        <img src="./images/product2.jpg" alt="about us graphis 2" />
+                    </div>
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12"> 
+                        <img src="./images/product3.jpg" alt="about us graphis 2" />
+                    </div>
+                </div>
+                <div class="grid-row grid-row-pad-large" > 
+                    <div class="grid-6 grid-tablet-12 grid-mobile-12"> 
+                        <img src="https://www.find-salt.com/assets/img/location2-4.jpg" alt="about us graphis 2" />
+                    </div>
+                    <div class="grid-6 grid-tablet-12 grid-mobile-12"> 
+                        <img src="https://www.find-salt.com/assets/img/location1-2.jpg" alt="about us graphis 2" />
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+
+			 <!-- ==== JOR INFO ====-->
+			 <div class="container hidden_" id="jorInfo">
+                <div class="grid-row grid-row-pad-large"> 
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12">
+                        <h3>LOCATION</h3>
+                    </div>
+                    <div class="grid-4 grid-tablet-12 grid-mobile-12">
+                        <h3>JORDAN</h3>
                         <p>mamaiya shawarma oh yeah blah blah blah,Riyadh</p>
                     </div>
                     <div class="grid-4 grid-tablet-12 grid-mobile-12">
@@ -355,12 +442,79 @@
 		<script src="js/audio-player/jquery.scamp.player.min.js"></script>
 		<!-- /audio player -->
 
-		<!-- google scripts -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY;async=2&#038;ver=1.0.0"></script>
-		<script src="js/jquery.gmap.min.js"></script>
-
 		<!-- custom scripts -->
 		<script src="js/scripts.js"></script>
 		<script src="js/custom.js"></script>
+		<script>
+		  	
+			var map_marker = new L.icon({iconUrl: './images/map-marker.png'});
+			var mymap = L.map('mapid').setView([21.511220, 39.227265], 13);
+			var marker = L.marker([21.511220, 39.227265],{icon: map_marker}).addTo(mymap);
+
+		  	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+				style: 'mapbox://styles/kev-dev-brund/cklthi33j102317roynai7od8',
+				id: 'mapbox/streets-v11',
+				tileSize: 512,
+				zoomOffset: -1,
+				accessToken: 'pk.eyJ1Ijoia2V2LWRldi1icnVuZCIsImEiOiJja2x0Y2l3aXEwdjh5MnFtcGEyZWMzZTR1In0.k-eU2a3ePHid0vCKU7ev8A'
+			}).addTo(mymap);
+		</script>
+		
+
+		<script>
+			const jed = document.getElementById('jed')
+			const ruh = document.getElementById('ruh')
+			const jor = document.getElementById('jor')
+
+			const jedInfo = document.getElementById('jedInfo')
+			const ruhInfo = document.getElementById('ruhInfo')
+			const jorInfo = document.getElementById('jorInfo')
+
+			const jedMap = document.getElementById('jedMap')
+			const ruhMap = document.getElementById('ruhMap')
+			const jorMap = document.getElementById('jorMap')
+
+			function jedClick() {
+				jorInfo.classList.add('hidden_')
+				ruhInfo.classList.add('hidden_')
+				jorInfo.classList.remove('show_')
+				ruhInfo.classList.remove('show_')
+				jorMap.classList.add('hidden_')
+				ruhMap.classList.add('hidden_')
+				jorMap.classList.remove('show_')
+				ruhMap.classList.remove('show_')
+				jedInfo.classList.add('show_')
+				jedMap.classList.add('show_')
+				
+			}
+
+			function ruhClick() {
+				jedInfo.classList.add('hidden_')
+				jorInfo.classList.add('hidden_')
+				jedInfo.classList.remove('show_')
+				jorInfo.classList.remove('show_')
+				jedMap.classList.add('hidden_')
+				jorMap.classList.add('hidden_')
+				jedMap.classList.remove('show_')
+				jorMap.classList.remove('show_')
+				ruhInfo.classList.add('show_')
+				ruhMap.classList.add('show_')
+			}
+
+			function jorClick() {
+				jedInfo.classList.add('hidden_')
+				ruhInfo.classList.add('hidden_')
+				jedInfo.classList.remove('show_')
+				ruhInfo.classList.remove('show_')
+				jedMap.classList.add('hidden_')
+				ruhMap.classList.add('hidden_')
+				jedMap.classList.remove('show_')
+				ruhMap.classList.remove('show_')
+				jorInfo.classList.add('show_')
+				jorMap.classList.add('show_')
+			}
+
+
+		</script>
 	</body>
 </html>
